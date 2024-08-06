@@ -7,6 +7,8 @@ export default [
 		endDate: new Date(2022, 11, 31),
 		description: '',
 		imageUrl: '',
+		ministryUrl: 'https://amor.org/',
+		ministryName: 'Amor Ministries',
 	},
 	{
 		id: 2,
@@ -16,14 +18,18 @@ export default [
 		endDate: new Date(2024, 0, 1),
 		description: '',
 		imageUrl: '',
+		ministryUrl: 'https://boldhope.org/',
+		ministryName: 'Bold Hope',
 	},
 	{
 		id: 3,
 		title: 'Royal Family Kids Camp 2024',
-		location: 'Golden Bell Campground',
+		location: 'Golden Bell Camp, CO',
 		startDate: new Date(2024, 5, 16),
 		endDate: new Date(2024, 5, 21),
 		description: '',
 		imageUrl: '',
+		ministryUrl: 'https://arvadaroyalfamilykids.org/',
+		ministryName: 'Royal Family Kids Arvada',
 	},
 ];

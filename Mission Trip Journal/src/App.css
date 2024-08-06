@@ -3,11 +3,16 @@
 	margin: 0 auto;
 }
 
+.fa-green {
+	color: darkolivegreen;
+}
+
 .header--container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: darkolivegreen;
+	color: cornsilk;
 }
 
 .header--title {

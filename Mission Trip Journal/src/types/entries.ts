@@ -6,4 +6,6 @@ export type Entry = {
 	endDate: Date;
 	description: string;
 	imageUrl: string;
+	ministryUrl: string;
+	ministryName: string;
 };
