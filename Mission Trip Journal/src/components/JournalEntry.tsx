@@ -4,24 +4,32 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
 function JournalEntry(props: Entry) {
+	const dateOptions: Intl.DateTimeFormatOptions = {
+		year: 'numeric',
+		month: 'short',
+		day: 'numeric',
+	};
+
 	return (
-		<div className='entry--container'>
-			<img src={props.imageUrl} alt={props.title} />
-			<section>
-				<p>
-					<FontAwesomeIcon icon={faLocationDot} className='fa-green' />
-					{props.location}
-					<a href={props.ministryUrl}>{props.ministryName}</a>
-				</p>
-				<h2>{props.title}</h2>
-				<h4>
-					{props.startDate.toLocaleDateString()} -{' '}
-					{props.endDate.toLocaleDateString()}
-				</h4>
-				<p>{props.description}</p>
-			</section>
+		<>
+			<div className='entry--container'>
+				<img src={props.imageUrl} alt={props.title} className='entry--img' />
+				<section className='entry--content'>
+					<div className='entry--location'>
+						<FontAwesomeIcon icon={faLocationDot} className='fa-green' />
+						<p>{props.location}</p>
+						<a href={props.ministryUrl}>{props.ministryName}</a>
+					</div>
+					<h2>{props.title}</h2>
+					<h4 className='entry--dates'>
+						{props.startDate.toLocaleDateString('en-US', dateOptions)} -{' '}
+						{props.endDate.toLocaleDateString('en-US', dateOptions)}
+					</h4>
+					<p className='entry--description'>{props.description}</p>
+				</section>
+			</div>
 			<hr />
-		</div>
+		</>
 	);
 }
 

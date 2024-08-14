@@ -1,6 +1,7 @@
 #root {
 	max-width: 1280px;
 	margin: 0 auto;
+	font-family: Inter, sans-serif;
 }
 
 .fa-green {
@@ -17,4 +18,65 @@
 
 .header--title {
 	padding-left: 0.5rem;
+}
+
+.entry--container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	font-weight: 700;
+	line-height: 30.26px;
+	text-align: left;
+}
+
+.entry--img {
+	width: 30vw;
+	height: 30vw;
+	max-width: 225px;
+	max-height: 225px;
+	padding-left: 2rem;
+}
+
+.entry--content {
+	padding: 1rem 2rem;
+}
+
+.entry--content > h2 {
+	font-size: 2rem;
+}
+
+.entry--location {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+
+.entry--location > p {
+	margin: 0 1rem 0 0.5rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 12.39px;
+	letter-spacing: 0.17em;
+}
+
+.entry--location > a {
+	color: darkolivegreen;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 12.39px;
+}
+
+.entry--location > a:hover {
+	color: olive;
+}
+
+.entry--dates {
+	font-size: 1rem;
+	line-height: 12.39px;
+	margin: 0.5rem 0;
+}
+
+.entry--description {
+	font-weight: 400;
+	margin: 0;
 }
